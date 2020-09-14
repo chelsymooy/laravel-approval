@@ -26,10 +26,8 @@ class ApprovalServiceProvider extends ServiceProvider {
         // REGISTER CONFIG
         $this->publishes([
             __DIR__.'/../../config/approval.php' => config_path('approval.php'),
+            __DIR__.'/../../database/migrations' => database_path('migrations/approvals'),
         ]);
-
-        // REGISTER MIGRATION
-        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
 
         // REGISTER OBSERVER
         // \Chelsymooy\Approval\Models\Table::observe(new \Chelsymooy\Approval\Observers\SetApproval);
