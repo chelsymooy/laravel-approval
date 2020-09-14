@@ -97,7 +97,7 @@ class Inbox extends Model
         $rules['ref_id']        = ['required', 'int'];
         $rules['ref_type']      = ['required', 'string'];
 
-        $rules['approved_by']   = ['nullable', 'exists:' . app()->make($user::class)->getTable() . ',id'];
+        $rules['approved_by']   = ['nullable', 'exists:' . app()->make(new $user)->getTable() . ',id'];
         $rules['approved_at']   = ['nullable', 'date'];
 
         return $rules;
