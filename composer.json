@@ -1,0 +1,66 @@
+{
+    "name": "chelsymooy/laravel-approval",
+    "description": "chelsymooy approval designed for Inbox balance statement.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "feature",
+        "database",
+        "approval"
+    ],
+    "license": "MIT",
+    "homepage": "https://thunderlab.id",
+    "support": {
+        "email": "chelsy@thunderlab.id",
+        "issues": "https://github.com/chelsymooy/laravel-approval/issues",
+        "source": "https://github.com/chelsymooy/laravel-approval",
+        "docs": "https://github.com/chelsymooy/laravel-approval/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "chelsymooy",
+            "homepage": "https://thunderlab.id",
+            "email": "chelsy@thunderlab.id"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "illuminate/console": "5.8.*",
+        "illuminate/database": "5.8.*",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "illuminate/container": "5.8.*",
+        "phpunit/phpunit": "^9.0.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Chelsymooy\\Approval\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Chelsymooy\\Approval\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chelsymooy\\Approval\\Providers\\ApprovalServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
