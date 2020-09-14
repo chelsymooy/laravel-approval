@@ -24,13 +24,13 @@
         }
     ],
     "require": {
-        "php": "^7.2.0",
-        "illuminate/console": "5.8.*",
-        "illuminate/database": "5.8.*",
-        "illuminate/support": "5.8.*"
+        "php": "^7.4.0",
+        "illuminate/console": "^7.0.0",
+        "illuminate/database": "^7.0.0",
+        "illuminate/support": "^7.0.0"
     },
     "require-dev": {
-        "illuminate/container": "5.8.*",
+        "illuminate/container": "^7.0.0",
         "phpunit/phpunit": "^9.0.0"
     },
     "autoload": {
