@@ -1,6 +1,6 @@
 {
     "name": "chelsymooy/laravel-approval",
-    "description": "chelsymooy approval designed for Inbox balance statement.",
+    "description": "chelsymooy approval designed for approvals using inboxes.",
     "type": "library",
     "keywords": [
         "laravel",
